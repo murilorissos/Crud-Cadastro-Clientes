@@ -128,16 +128,15 @@
 		   	    dataType: 'html',
 		   	    data : parametros,
 		    	beforeSend : function(){
-		     		//alert("alterando comentario....");
 		     	}
 			})
 			.done(function(resposta){
 				fechaModal();
 				read_data();
 				if(resposta != null){
-					alert_success("O comentario foi alterado com sucesso!");
+					alert_success("O cadastro foi alterado com sucesso!");
 				}else{
-					alert_error("Ocorreu um erro ao alterar seu comentario!");
+					alert_error("Ocorreu um erro ao alterar seu cadastro!");
 				}
 			})
 			.fail(function(jqXHR, textStatus, msg){
